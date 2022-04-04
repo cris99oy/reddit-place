@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         Reddit Place 
+// @name         Reddit Place - Armée de Kameto
 // @namespace    http://tampermonkey.net/
 // @version      0.4
 // @description  On va récuperer ce qui nous est du de droit.
 // @author       Adcoss95
-// @match        https://
+// @match        https://hot-potato.reddit.com/embed*
 // @icon         https://styles.redditmedia.com/t5_4eiiz1/styles/communityIcon_ojy24r8j90o81.jpg
 // @grant        none
 // ==/UserScript==
