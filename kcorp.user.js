@@ -1,9 +1,12 @@
 // ==UserScript==
-// @name         Reddit Place 
-// @namespace    
-// @version      0.1
-// @description  recupera la bandera
-// @author       CRIS99
+// @name         Reddit Place - Armée de Kameto
+// @namespace    http://tampermonkey.net/
+// @version      0.4
+// @description  On va récuperer ce qui nous est du de droit.
+// @author       Adcoss95
+// @match        https://hot-potato.reddit.com/embed*
+// @icon         https://styles.redditmedia.com/t5_4eiiz1/styles/communityIcon_ojy24r8j90o81.jpg
+// @grant        none
 // ==/UserScript==
 if (window.top !== window.self) {
     window.addEventListener('load', () => {
@@ -13,6 +16,15 @@ if (window.top !== window.self) {
             i.src = "https://github.com/cris99oy/reddit-place/raw/main/redditperu.png";
             i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 2000px;";
             console.log(i);
+            document.addEventListener("keydown", function(event) {
+                if(event.key == "F4"){
+                    if (i.style.display === "none") {
+                        i.style.display = "block";
+                    } else {
+                        i.style.display = "none";
+                    }
+                }
+            });
             return i;
         })())
  
